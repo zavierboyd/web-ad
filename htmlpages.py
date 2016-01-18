@@ -22,7 +22,6 @@ Ad = """
     <p>Classes from Beginners to Advance levels.</p>
 
     <p>Fees from $76 per term.</p>
-    <img scr="/images/pic.png">
 </body>
 </html>
 """

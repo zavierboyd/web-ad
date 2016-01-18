@@ -18,10 +18,15 @@ import webapp2
 from htmlpages import *
 
 
-class AdHandler(webapp2.RequestHandler):
+class InfoHandler(webapp2.RequestHandler):
+    def get(self):
+        self.response.write(Ad)
+
+
+class ContactHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write(Ad)
 
 app = webapp2.WSGIApplication([
-    ('/', AdHandler)
+    ('/', InfoHandler), ("/contact", ContactHandler)
 ], debug=True)
